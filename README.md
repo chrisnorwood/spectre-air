@@ -1,2 +1,3 @@
 # Spectre Air & Ground Freight
-## Website redesign for freight brokerage
+## About
+This is a redesign for freight brokerage / 3PL logistics company.
