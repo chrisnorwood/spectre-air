@@ -6,6 +6,7 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+.DS_Store
 
 # NPM
 node_modules/
