@@ -1,0 +1,23 @@
+{
+  "name": "spectre-air",
+  "version": "1.0.0",
+  "description": "This is a redesign for freight brokerage / 3PL logistics company.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisnorwood/spectre-air.git"
+  },
+  "author": "Chris Norwood",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrisnorwood/spectre-air/issues"
+  },
+  "homepage": "https://github.com/chrisnorwood/spectre-air#readme"
+}
