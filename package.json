@@ -4,9 +4,11 @@
   "description": "This is a redesign for freight brokerage / 3PL logistics company.",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp": "^4.0.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "tailwindcss": "^1.0.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
