@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "This is a redesign for freight brokerage / 3PL logistics company.",
   "main": "gulpfile.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
+    "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.2",
     "tailwindcss": "^1.0.3"
   },
   "scripts": {
