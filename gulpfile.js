@@ -17,7 +17,7 @@ gulp.task('css', function () {
       // ...
     ]))
     // ...
-    .pipe(gulp.dest('./dist'))
+    .pipe(gulp.dest('./dist/css'))
     .pipe(browserSync.reload({
       stream: true
     }));
