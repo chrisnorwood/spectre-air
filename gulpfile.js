@@ -52,7 +52,7 @@ gulp.task('scripts', function() {
 gulp.task('browserSync', function() {
   browserSync({
     server: {
-      baseDir: 'dist'
+      baseDir: './dist'
     }
   })
 });
@@ -61,7 +61,7 @@ gulp.task('browserSync', function() {
 gulp.task('watch', gulp.parallel('browserSync', 'css', 'scripts', 'html'), function() {
   gulp.watch('src/css/**/*.css', ['css']);
   gulp.watch('src/js/**/*.js', ['scripts']);
-  gulp.watch('dist/*.html', ['html']).on('change', browserSync.reload);
+  gulp.watch('src/*.html', ['html']).on('change', browserSync.reload);
 });
 
 // Compiles all gulp tasks
