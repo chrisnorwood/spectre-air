@@ -5,6 +5,7 @@ import rename from 'gulp-rename';
 import uglify from 'gulp-uglify';
 import del from 'del';
 import postcss from 'gulp-postcss';
+import imageMin from 'gulp-imagemin';
 
 const paths = {
   scripts: {
@@ -18,6 +19,10 @@ const paths = {
   html: {
     src: 'src/*.html',
     dest: 'dist/',
+  },
+  images: {
+    src: 'src/img/**/*',
+    dest: 'dist/img/',
   },
 };
 
@@ -47,7 +52,13 @@ function html() {
       .pipe(gulp.dest(paths.html.dest))
 }
 
-const compile = gulp.parallel(scripts, css, html);
+function images() {
+  return gulp.src(paths.images.src)
+      .pipe(imageMin())
+      .pipe(gulp.dest(paths.images.dest))
+}
+
+const compile = gulp.parallel(scripts, css, html, images);
 
 // Setup the BrowserSync server
 import browserSync from 'browser-sync';
@@ -71,6 +82,7 @@ function serve(done) {
 const watchScripts = () => gulp.watch(paths.scripts.src, gulp.series(scripts, reload));
 const watchCss = () => gulp.watch(paths.css.src, gulp.series(css, reload));
 const watchHtml = () => gulp.watch(paths.html.src, gulp.series(html, reload));
+const watchImages = () => gulp.watch(paths.images.src, gulp.series(images, reload));
 
 const watch = gulp.parallel(watchScripts, watchCss, watchHtml);
 
@@ -84,6 +96,7 @@ export {
   css, 
   html,
   compile,
+  images,
 }
 
 export default defaultTasks
