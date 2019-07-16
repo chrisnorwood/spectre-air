@@ -4,17 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spectre Air & Ground Freight, Inc.</title>
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,500i,700,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
   <div id="hero-header">
     <div class="flex justify-end mt-0 w-full">
-      <span class="text-red-600 font-extrabold bg-black px-3 py-2 opacity-75 mx-8">(800) 867-5580</span>
+      <span class="text-red-600 text-xl font-extrabold bg-black px-3 py-2 mx-8" style="background: rgba(0, 0, 0, 0.75)">
+        <span>(800) 867-5580</span>
+      </span>
     </div>
-    <nav class="flex items-center justify-between bg-white p-3 flex-wrap w-full z-10 top-0">
+
+    <nav class="flex items-center justify-between bg-white p-2 flex-wrap w-full z-10 top-0 shadow-xl">
       <div class="flex items-center flex-no-shrink mr-6">
         <a class="" href="#">
-          <span class="text-xl pl-2">Spectre Air</span>
+          <img class="w-48 lg:w-64" src="./img/spectre-air-logo-373x82.png" alt="Spectre Air & Ground Freight, Inc.">
         </a>
       </div>
 
@@ -24,10 +28,10 @@
         </button>
       </div>
 
-      <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-4 lg:pt-0" id="nav-content">
+      <div class="w-full lg:flex lg:items-center lg:w-auto hidden lg:block pt-4 lg:pt-0" id="nav-content">
         <ul class="list-reset lg:flex justify-end flex-1 items-center">
           <li class="mr-3">
-            <a class="inline-block py-2 px-4 text-red-700 font-extrabold no-underline" href="#">Get a Quote</a>
+            <a class="inline-block py-2 px-4 text-darkred font-bold no-underline" href="#">Get a Quote</a>
           </li>
           <li class="mr-3">
             <a class="inline-block text-grey-dark no-underline hover:text-grey-lighter hover:text-underline py-2 px-4" href="#">
@@ -54,6 +58,18 @@
         </ul>
       </div>
     </nav>
+
+    <div class="my-4 p-3 text-white shadow-2xl" style="background: rgba(0, 0, 0, 0.5)"> 
+      <p class="text-center">
+        Full-service freight broker with unmatched customer service.  Truckload, LTL, oversize, overweight shipping & more — we've got you covered.
+      </p>
+      
+      <div class="flex my-4 justify-center">
+        <button class="text-xl font-bold tracking-wide bg-orange py-1 px-2 rounded shadow-inner" style="text-shadow: 2px 1px #4d4d4d">
+          Get a Quote
+        </button>
+      </div>
+    </div>
   </div>
   <script>
     //Javascript to toggle the menu
