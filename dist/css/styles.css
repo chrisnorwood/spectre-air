@@ -633,7 +633,7 @@ body {
 
 #hero-header {
   background-image: url("./../img/desert-truck-sm-2.jpg");
-  background-position: center right;
+  background-position: center bottom;
   background-size: cover;
   height: 45vh;
 }
@@ -641,7 +641,7 @@ body {
 @media (min-width: 1024px) {
   #hero-header {
     background-image: url("./../img/desert-truck-lg.jpg");
-    background-position: center right;
+    background-position: center bottom;
     background-size: cover;
     height: 50vh;
   }
