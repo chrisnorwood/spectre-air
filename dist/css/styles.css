@@ -627,6 +627,17 @@ video {
   }
 }
 
+body {
+  font-family: 'Barlow', sans-serif;
+}
+
+#hero-header {
+  background-image: url("./../img/dez-truck-1000w.jpg");
+  background-position: center right;
+  background-size: cover;
+  height: 40vh;
+}
+
 .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -7333,17 +7344,6 @@ video {
 
 .z-auto {
   z-index: auto;
-}
-
-body {
-  font-family: 'Barlow', sans-serif;
-}
-
-#hero-header {
-  background-image: url("./../img/dez-truck-1000w.jpg");
-  background-position: center right;
-  background-size: cover;
-  height: 40vh;
 }
 
 @media (min-width: 640px) {

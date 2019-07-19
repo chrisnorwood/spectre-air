@@ -2,8 +2,6 @@
 
 @tailwind components;
 
-@tailwind utilities;
-
 body {
   font-family: 'Barlow', sans-serif;
 }
@@ -14,3 +12,5 @@ body {
   background-size: cover;
   height: 40vh;
 }
+
+@tailwind utilities;
