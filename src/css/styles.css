@@ -10,7 +10,7 @@ body {
   background-image: url("./../img/dez-truck-1000w.jpg");
   background-position: center right;
   background-size: cover;
-  height: 40vh;
+  height: 45vh;
 }
 
 @tailwind utilities;
