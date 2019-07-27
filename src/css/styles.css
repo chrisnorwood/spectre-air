@@ -22,4 +22,20 @@ body {
   }
 }
 
+#inner-header {
+  background-image: url("./../img/orange-banner-sm.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  height: 20vh;
+}
+
+@media (min-width: 1024px) {
+  #inner-header {
+    background-image: url("./../img/orange-banner-sm.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    height: 20vh;
+  }
+}
+
 @tailwind utilities;
