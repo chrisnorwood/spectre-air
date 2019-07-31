@@ -6,6 +6,21 @@ body {
   font-family: 'Barlow', sans-serif;
 }
 
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header,
+.page-footer {
+    flex-shrink: 0;
+}
+
+.page-body {
+    flex-grow: 1;
+}
+
 #hero-header {
   background-image: url("./../img/desert-truck-sm-2.jpg");
   background-position: center bottom;
