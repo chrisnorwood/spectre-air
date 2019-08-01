@@ -8,130 +8,131 @@
   <link rel="stylesheet" href="./../css/styles.css">
 </head>
 <body>
-  <div class="mt-0 w-full" style="background-color: #DFE0DF;">
-    <div class="flex justify-end m-auto" style="max-width: 1024px;">
-      <span class="text-red-600 text-darkred font-extrabold bg-black px-3 py-2 mx-8 lg:text-xl" style="background: rgba(0, 0, 0, 0.75)">
-        <span>(800) 867-5580</span>
-      </span>
-    </div>
-  </div>
-
-  <div class="bg-white mt-0 w-full shadow-2xl z-10 relative">
-    <nav class="flex items-center justify-between p-2 flex-wrap w-full m-auto" style="max-width: 1024px;">
-      <div class="flex items-center flex-no-shrink mr-6">
-        <a href="/" title="Homepage">
-          <img class="w-48 lg:w-64" src="./../img/spectre-air-logo-373x82.png" alt="Spectre Air & Ground Freight, Inc.">
-        </a>
+  <div class="wrapper">
+    
+    <header class="page-header">
+      <div class="mt-0 w-full" style="background-color: #DFE0DF;">
+        <div class="flex justify-end m-auto" style="max-width: 1024px;">
+          <span class="text-red-600 text-darkred font-extrabold bg-black px-3 py-2 mx-8 lg:text-xl" style="background: rgba(0, 0, 0, 0.75)">
+            <span>(800) 867-5580</span>
+          </span>
+        </div>
       </div>
 
-      <div class="block lg:hidden">
-        <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-grey border-black">
-          <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-        </button>
+      <div class="bg-white mt-0 w-full shadow-2xl z-10 relative">
+        <nav class="flex items-center justify-between p-2 flex-wrap w-full m-auto" style="max-width: 1024px;">
+          <div class="flex items-center flex-no-shrink mr-6">
+            <a href="/" title="Homepage">
+              <img class="w-48 lg:w-64" src="./../img/spectre-air-logo-373x82.png" alt="Spectre Air & Ground Freight, Inc.">
+            </a>
+          </div>
+
+          <div class="block lg:hidden">
+            <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-grey border-black">
+              <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+            </button>
+          </div>
+
+          <div class="w-full lg:flex lg:items-center lg:w-auto hidden lg:block pt-4 lg:pt-0" id="nav-content">
+            <ul class="list-reset lg:flex justify-end flex-1 items-center border-t border-darkgrey lg:border-0">
+              <li class="mr-3">
+                <a class="inline-block text-darkred no-underline hover:underline py-2 px-4 font-bold" href="/get-a-quote">
+                  Get a Quote
+                </a>
+              </li>
+              <li class="mr-3">
+                <a class="inline-block text-grey-dark no-underline hover:underline py-2 px-4" href="/services">
+                  Services
+                </a>
+              </li>
+              <li class="mr-3">
+                <a class="inline-block text-grey-dark no-underline hover:underline py-2 px-4" href="/industries">
+                  Industries
+                </a>
+              </li>
+              <li class="mr-3">
+                <a class="inline-block text-grey-dark no-underline hover:underline py-2 px-4" href="/about-us">
+                  About Us
+                </a>
+              </li>
+              <li class="mr-3">
+                <a class="inline-block text-grey-dark no-underline hover:underline py-2 px-4" href="/contact-us">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-body">
+      <div id="inner-header" class="flex justify-center content-center">
+        <div class="p-4 text-white shadow-2xl mx-auto my-auto" style="background: rgba(0, 0, 0, 0.70); max-width: 1024px;"> 
+          <h1 class="text-3xl lg:text-4xl font-bold">Services</h1>
+        </div>
       </div>
 
-      <div class="w-full lg:flex lg:items-center lg:w-auto hidden lg:block pt-4 lg:pt-0" id="nav-content">
-        <ul class="list-reset lg:flex justify-end flex-1 items-center border-t border-darkgrey lg:border-0">
-          <li class="mr-3">
-            <a class="inline-block text-darkred no-underline hover:underline py-2 px-4 font-bold" href="/get-a-quote">
-              Get a Quote
-            </a>
-          </li>
-          <li class="mr-3">
-            <a class="inline-block text-grey-dark no-underline hover:underline py-2 px-4" href="/services">
-              Services
-            </a>
-          </li>
-          <li class="mr-3">
-            <a class="inline-block text-grey-dark no-underline hover:underline py-2 px-4" href="/industries">
-              Industries
-            </a>
-          </li>
-          <li class="mr-3">
-            <a class="inline-block text-grey-dark no-underline hover:underline py-2 px-4" href="/about-us">
-              About Us
-            </a>
-          </li>
-          <li class="mr-3">
-            <a class="inline-block text-grey-dark no-underline hover:underline py-2 px-4" href="/contact-us">
-              Contact Us
-            </a>
-          </li>
-        </ul>
+      <div class="flex flex-wrap mx-auto mt-4 mb-2 border-b-2 border-darkgrey" style="max-width: 1024px;">
+        <div class="lg:w-1/4 w-1/2 p-4 text-center">
+          <a href="/services/van-shipping" title="Vans">
+            <img src="./../img/van-216x63.png" alt="Van shipping" class="mx-auto my-2">
+          </a>
+          <a class="underline text-xl" href="/services/van-shipping">Vans</a>
+        </div>
+
+        <div class="lg:w-1/4 w-1/2 p-4 text-center">
+          <a href="/services/flatbed-shipping" title="Flatbeds">
+            <img src="./../img/flat-216x64.png" alt="Flatbed Shipping" class="mx-auto my-2">
+          </a>
+          <a class="underline text-xl" href="/services/flatbed-shipping">Flatbeds</a>
+        </div>
+
+        <div class="lg:w-1/4 w-1/2 p-4 text-center">
+          <a href="/services/ltl-shipping" title="Bobtails & LTL">
+            <img src="./../img/bobtail-174x63.png" alt="Bobtail and LTL shipping" class="mx-auto my-2">
+          </a>
+          <a class="underline text-xl" href="/services/ltl-shipping">Bobtails & LTL</a>
+        </div>
+
+        <div class="lg:w-1/4 w-1/2 p-4 text-center">
+          <a href="/services/oversize-overweight" title="Special Equipment">
+            <img src="./../img/sp-eqp-215x64.png" alt="Oversize, overweight, special equipment" class="mx-auto my-2">
+          </a>
+          <a class="underline text-xl" href="/services/oversize-overweight">Special Equipment</a>
+        </div>
       </div>
-    </nav>
+
+      <div class="flex flex-wrap mx-auto pl-8 pr-8 py-4 mb-8" style="max-width: 1024px;">
+        <div class="w-full text-center">
+          <h2 class="text-2xl lg:text-3xl mb-2 italic">We Are NOT Your Average Broker</h2>
+        </div>
+        <p class="lg:text-xl leading-relaxed w-full mb-4" style="text-indent: 2em">
+          We take the hassle out of your supply chain management.  With 24/7 on-call support, we offer our top-notch customer support anytime you need it.
+        </p>
+        <p class="lg:text-xl leading-relaxed w-full mb-4" style="text-indent: 2em">  
+          We understand that every piece of freight is different, but each shipment should be treated with the same careful touch. We do our best to choose a solution that is not only the most cost-effictive, but the most hassle-free option for your freight.
+        </p>
+        <p class="lg:text-xl leading-relaxed w-full mb-4" style="text-indent: 2em">
+          Spectre offers a wide variety of modes of transportation.  We provide both truckload and LTL shipping, oversize and overweight shipping, pad wrap, logistics, ocean and rail shipments, and more.
+        </p>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="mt-0 w-full h-10" style="background-color: #666666;">
+        <div class="flex justify-end m-auto" style="max-width: 1024px;"></div>
+      </div>
+      <div class="mt-0 w-full" style="background-color: #4d4d4d;">
+        <div class="text-center text-white m-auto p-3" style="max-width: 1024px;">
+          <span class="text-center">
+            © 2019 Spectre Air & Ground Freight, Inc. | <a href="/site-map" class="underline">Site Map</a> | <a href="/privacy-policy" class="underline">Privacy Policy</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
   </div>
-
-  <div id="inner-header" class="flex justify-center content-center">
-    <div class="p-4 text-white shadow-2xl mx-auto my-auto" style="background: rgba(0, 0, 0, 0.70); max-width: 1024px;"> 
-      <h1 class="text-3xl lg:text-4xl font-bold">Services</h1>
-
-      <!-- <p class="text-center mt-8 italic">
-        <a href="#">Learn More &#9660;</a>
-      </p> -->
-    </div>
-  </div>
-
-  <div class="flex flex-wrap mx-auto mt-4 mb-2 border-b-2 border-darkgrey" style="max-width: 1024px;">
-    <div class="lg:w-1/4 w-1/2 p-4 text-center">
-      <a href="/services/van-shipping" title="Vans">
-        <img src="./../img/van-216x63.png" alt="Van shipping" class="mx-auto my-2">
-      </a>
-      <a class="underline text-xl" href="/services/van-shipping">Vans</a>
-    </div>
-
-    <div class="lg:w-1/4 w-1/2 p-4 text-center">
-      <a href="/services/flatbed-shipping" title="Flatbeds">
-        <img src="./../img/flat-216x64.png" alt="Flatbed Shipping" class="mx-auto my-2">
-      </a>
-      <a class="underline text-xl" href="/services/flatbed-shipping">Flatbeds</a>
-    </div>
-
-    <div class="lg:w-1/4 w-1/2 p-4 text-center">
-      <a href="/services/ltl-shipping" title="Bobtails & LTL">
-        <img src="./../img/bobtail-174x63.png" alt="Bobtail and LTL shipping" class="mx-auto my-2">
-      </a>
-      <a class="underline text-xl" href="/services/ltl-shipping">Bobtails & LTL</a>
-    </div>
-
-    <div class="lg:w-1/4 w-1/2 p-4 text-center">
-      <a href="/services/oversize-overweight" title="Special Equipment">
-        <img src="./../img/sp-eqp-215x64.png" alt="Oversize, overweight, special equipment" class="mx-auto my-2">
-      </a>
-      <a class="underline text-xl" href="/services/oversize-overweight">Special Equipment</a>
-    </div>
-  </div>
-
-  <div class="flex flex-wrap mx-auto pl-8 pr-8 py-4 mb-8" style="max-width: 1024px;">
-    <div class="w-full text-center">
-      <h1 class="text-3xl mb-2 italic">We Are NOT Your Average Broker</h1>
-    </div>
-    <p class="lg:text-xl leading-relaxed w-full mb-4" style="text-indent: 2em">
-      We take the hassle out of your supply chain management.  With 24/7 on-call support, we offer our top-notch customer support anytime you need it.
-    </p>
-    <p class="lg:text-xl leading-relaxed w-full mb-4" style="text-indent: 2em">  
-      We understand that every piece of freight is different, but each shipment should be treated with the same careful touch. We do our best to choose a solution that is not only the most cost-effictive, but the most hassle-free option for your freight.
-    </p>
-    <p class="lg:text-xl leading-relaxed w-full mb-4" style="text-indent: 2em">
-      Spectre offers a wide variety of modes of transportation.  We provide both truckload and LTL shipping, oversize and overweight shipping, pad wrap, logistics, ocean and rail shipments, and more.
-    </p>
-  </div>
-
-
-  <div class="mt-0 w-full h-10" style="background-color: #666666;">
-    <div class="flex justify-end m-auto" style="max-width: 1024px;">
-      
-    </div>
-  </div>
-
-  <div class="mt-0 w-full" style="background-color: #4d4d4d;">
-    <div class="text-center text-white m-auto p-3" style="max-width: 1024px;">
-      <span class="text-center">
-        © 2019 Spectre Air & Ground Freight, Inc. | <a href="/site-map" class="underline">Site Map</a> | <a href="/privacy-policy" class="underline">Privacy Policy</a>
-      </span>
-    </div>
-  </div>
-
   <script>
     //Javascript to toggle the menu
     document.getElementById('nav-toggle').onclick = function(){
