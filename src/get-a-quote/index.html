@@ -72,23 +72,23 @@
         </div>
       </div>
 
-      <form class="w-full mx-auto my-4 px-8 pt-1 pb-8" style="max-width: 1024px;">
+      <form action="https://formspree.io/chris@spectreair.com" method="POST" target="_blank" class="w-full mx-auto my-4 px-8 pt-1 pb-8" style="max-width: 1024px;">
         <div class="w-full text-center">
-          <h2 class="text-xl lg:text-2xl mb-4 italic">Request a Fast Freight Quote</h2>
+          <h2 class="text-xl lg:text-2xl mb-4 italic">Request a Fast Freight Quote Online</h2>
         </div>
         <div class="flex flex-wrap -mx-3 mb-6">
           <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
               First Name *
             </label>
-            <input class="appearance-none block w-full bg-gray-300 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-first-name" type="text" placeholder="John">
+            <input class="appearance-none block w-full bg-gray-300 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-first-name" name="first-name" type="text" placeholder="John" required>
             <!-- <p class="text-red-500 text-xs italic">Please fill out this field.</p> -->
           </div>
           <div class="w-full md:w-1/2 px-3">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
               Last Name *
             </label>
-            <input class="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe">
+            <input class="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" name="last-name" type="text" placeholder="Doe" required>
           </div>
         </div>
         <div class="flex flex-wrap -mx-3 mb-6">
@@ -96,14 +96,14 @@
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-email">
               Email Address *
             </label>
-            <input class="appearance-none block w-full bg-gray-300 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="text" placeholder="your@email.com">
+            <input class="appearance-none block w-full bg-gray-300 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" name="email" type="text" placeholder="your@email.com" required>
             <!-- <p class="text-red-500 text-xs italic">Please fill out this field.</p> -->
           </div>
           <div class="w-full md:w-1/2 px-3">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-phone">
               Phone Number *
             </label>
-            <input class="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-phone" type="tel" placeholder="555-555-5555">
+            <input class="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-phone" name="phone" type="tel" placeholder="555-555-5555" required>
           </div>
         </div>
         <div class="flex flex-wrap -mx-3 mb-6">
@@ -118,13 +118,13 @@
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-origin-zip">
               Origin ZIP
             </label>
-            <input class="appearance-none block w-full bg-gray-300 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-origin-zip" type="text" placeholder="12345">
+            <input class="appearance-none block w-full bg-gray-300 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-origin-zip" name="origin-zip" type="text" placeholder="12345">
           </div>
           <div class="w-full md:w-1/2 px-3">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-dest-zip">
               Destination Zip
             </label>
-            <input class="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-dest-zip" type="text" placeholder="12345">
+            <input class="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-dest-zip" name="dest-zip" type="text" placeholder="12345">
           </div>
         </div>
         <div class="flex flex-wrap -mx-3 mb-6">
@@ -132,13 +132,13 @@
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-eqip-req">
               Equipment Type Required
             </label>
-            <input class="appearance-none block w-full bg-gray-300 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-eqip-req" type="text" placeholder="e.g. Van, Flat, Step Deck, RGN, Hotshot, etc.">
+            <input class="appearance-none block w-full bg-gray-300 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-eqip-req" name="eqip-req" type="text" placeholder="e.g. Van, Flat, Step Deck, RGN, Hotshot, etc.">
           </div>
           <div class="w-full md:w-1/2 px-3">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-weight">
               Total Weight (lbs)
             </label>
-            <input class="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-weight" type="text" placeholder="XXXX">
+            <input class="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-weight" name="weight" type="text" placeholder="XXXX">
           </div>
         </div>
         <div class="flex flex-wrap -mx-3 mb-6">
@@ -146,13 +146,13 @@
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-dims">
               Dimensions (Feet or Inches)
             </label>
-            <input class="appearance-none block w-full bg-gray-300 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-dims" type="text" placeholder="Length X Width X Height">
+            <input class="appearance-none block w-full bg-gray-300 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-dims" name="dims" type="text" placeholder="Length X Width X Height">
           </div>
           <div class="w-full md:w-1/2 px-3">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-commodity">
               Commodity
             </label>
-            <input class="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-commodity" type="text" placeholder="e.g. Steel, Doors, Car, Palm Trees, etc.">
+            <input class="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-commodity" name="commodity" type="text" placeholder="e.g. Steel, Doors, Car, Palm Trees, etc.">
           </div>
         </div>
         <div class="flex flex-wrap -mx-3 mb-6">
@@ -160,13 +160,11 @@
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-notes">
               Notes / Special Requirements / Additional Services
             </label>
-            <textarea class="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-notes" rows="4" placeholder="Any additional details?"></textarea>
+            <textarea class="appearance-none block w-full bg-gray-300 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-notes" name="notes" rows="4" placeholder="Any additional details?"></textarea>
           </div>
         </div>
         <div class="flex">
-          <button class="text-xl font-bold tracking-wide bg-myorange hover:bg-orange-400 p-4 rounded mx-auto w-full text-white" type="button">
-            Request a Quote
-          </button>
+          <input class="text-xl font-bold tracking-wide bg-myorange hover:bg-orange-400 p-4 rounded mx-auto w-full text-white" type="submit" value="Request a Quote">
         </div>
       </form>
     </main>

@@ -3,9 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+  <title>Spectre Air & Ground Freight, Inc. - Continental and International Freight Shipping</title>
+  <link href="https://fonts.googleapis.com/css?family=Barlow:400,500,500i,700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./../../css/styles.css">
 </head>
 <body>
-  <p>Inner Content</p>
+  <div class="wrapper">
+    
+    <header class="page-header">
+      <div class="mt-0 w-full" style="background-color: #DFE0DF;">
+        <div class="flex justify-end m-auto" style="max-width: 1024px;">
+          <span class="text-red-600 text-darkred font-extrabold bg-black px-3 py-2 mx-8 lg:text-xl" style="background: rgba(0, 0, 0, 0.75)">
+            <span>(800) 867-5580</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="bg-white mt-0 w-full shadow-2xl z-10 relative">
+        <nav class="flex items-center justify-between p-2 flex-wrap w-full m-auto" style="max-width: 1024px;">
+          <div class="flex items-center flex-no-shrink mr-6">
+            <a href="/" title="Homepage">
+              <img class="w-48 lg:w-64" src="./../../img/spectre-air-logo-373x82.png" alt="Spectre Air & Ground Freight, Inc.">
+            </a>
+          </div>
+
+          <div class="block lg:hidden">
+            <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-grey border-black">
+              <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+            </button>
+          </div>
+
+          <div class="w-full lg:flex lg:items-center lg:w-auto hidden lg:block pt-4 lg:pt-0" id="nav-content">
+            <ul class="list-reset lg:flex justify-end flex-1 items-center border-t border-darkgrey lg:border-0">
+              <li class="mr-3">
+                <a class="inline-block text-darkred no-underline hover:underline py-2 px-4 font-bold" href="/get-a-quote">
+                  Get a Quote
+                </a>
+              </li>
+              <li class="mr-3">
+                <a class="inline-block text-grey-dark no-underline hover:underline py-2 px-4" href="/services">
+                  Services
+                </a>
+              </li>
+              <li class="mr-3">
+                <a class="inline-block text-grey-dark no-underline hover:underline py-2 px-4" href="/industries">
+                  Industries
+                </a>
+              </li>
+              <li class="mr-3">
+                <a class="inline-block text-grey-dark no-underline hover:underline py-2 px-4" href="/about-us">
+                  About Us
+                </a>
+              </li>
+              <li class="mr-3">
+                <a class="inline-block text-grey-dark no-underline hover:underline py-2 px-4" href="/contact-us">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-body">
+      <div id="inner-header" class="flex justify-center content-center">
+        <div class="p-4 text-white shadow-2xl mx-auto my-auto" style="background: rgba(0, 0, 0, 0.70); max-width: 1024px;"> 
+          <h1 class="text-3xl lg:text-4xl font-bold">Oversize & Overweight Shipping</h1>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap mx-auto mt-4" style="max-width: 1024px;">
+
+        <div class="w-full pl-8 mt-2">
+          <a class="italic font-bold tracking-wide bg-gray-600 hover:bg-gray-700 p-2 rounded mx-2 text-white" href="/services">&#8592; Back to All Services</a>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap mx-auto px-4 py-4 mb-8" style="max-width: 1024px;">
+        <div class="w-full text-center">
+          <h2 class="text-2xl lg:text-3xl mb-2 italic">Special Equipment for Any Situation</h2>
+        </div>
+        <p class="lg:text-2xl text-xl leading-relaxed w-full m-4" style="text-indent: 2em">
+          We offer 5, 6, 7, and 8-axle equipment for oversize/overweight freight. We can provide step decks, double drops, RGNs and more.  If you need special transportation permits or specialized eqipment for your freight, give us a call and we will see how we can help.
+        </p>
+
+        <div class="mt-4 mb-4 flex mx-auto">
+          <a class="text-xl font-bold tracking-wide border-2 border-myorange hover:border-orange-400 py-4 px-4 rounded mx-2" href="/contact-us">
+            Contact Us
+          </a>
+          <a class="text-xl font-bold tracking-wide text-white bg-myorange hover:bg-orange-400 py-4 px-4 rounded mx-2" href="/get-a-quote">
+            Get a Quote
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="mt-0 w-full h-10" style="background-color: #666666;">
+        <div class="flex justify-end m-auto" style="max-width: 1024px;"></div>
+      </div>
+      <div class="mt-0 w-full" style="background-color: #4d4d4d;">
+        <div class="text-center text-white m-auto p-3" style="max-width: 1024px;">
+          <span class="text-center">
+            © 2019 Spectre Air & Ground Freight, Inc. | <a href="/site-map" class="underline">Site Map</a> | <a href="/privacy-policy" class="underline">Privacy Policy</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script>
+    //Javascript to toggle the menu
+    document.getElementById('nav-toggle').onclick = function(){
+      document.getElementById('nav-content').classList.toggle('hidden');
+    }
+  </script>
 </body>
 </html>
