@@ -5,6 +5,7 @@ import rename from 'gulp-rename';
 import uglify from 'gulp-uglify';
 import del from 'del';
 import postcss from 'gulp-postcss';
+import purgecss from 'gulp-purgecss';
 import imageMin from 'gulp-imagemin';
 
 const paths = {
@@ -26,6 +27,13 @@ const paths = {
   },
 };
 
+// PurgeCSS Extractor
+class TailwindExtractor {
+  static extract(content) {
+    return content.match(/[A-z0-9-:\/]+/g);
+  }
+}
+
 // Task to clean /dist/ folder
 const clean = () => del(['dist']);
 
@@ -44,6 +52,17 @@ function css() {
         require('tailwindcss'),
         require('autoprefixer'),
       ]))
+      .pipe(
+        purgecss({
+          content: ['src/**/*.html'],
+          extractors: [
+            {
+              extractor: TailwindExtractor,
+              extensions: ['html']
+            }
+          ]
+        })
+      )
       .pipe(gulp.dest(paths.css.dest));
 }
 
